@@ -11,7 +11,6 @@ from haystack.components.generators import OpenAIGenerator
 from haystack.components.retrievers.in_memory import InMemoryEmbeddingRetriever
 
 import streamlit as st
-import time
 
 warnings.filterwarnings('ignore')
 from dotenv import load_dotenv
@@ -33,7 +32,7 @@ st.sidebar.title("Candidates resume")
 
 with st.form('my_form'):
     query = st.text_area('Enter the question about candidates')
-    submitted = st.form_submit_button('Answer.')
+    submitted = st.form_submit_button('Answer')
 #   if not openai_api_key.startswith('sk-'):
 #     st.warning('Please enter your OpenAI API key!', icon='⚠')
   
