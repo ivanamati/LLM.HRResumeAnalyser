@@ -1,0 +1,169 @@
+About Ivana:
+Ivana comes from Zagreb, Croatia.
+Ivana is a passionate and dedicated professional with a unique blend of expertise in Natural Language Processing (NLP), AI Engineering, and Applied Linguistics. With a PhD in Applied Linguistics from the University of Zagreb, Ivana has spent years combining her love for language with advanced AI technologies. Her career has been marked by significant achievements, including the development of innovative query approaches in the RAG pipeline and the optimization of prompt design, which led to a remarkable increase in AI model accuracy.
+Ivana’s work is not just about technical excellence; it’s about making a real-world impact. From her role as a team lead in Switzerland, where she improved AI workflows, to her contributions in leading world Voice Assistant, Ivana has consistently pushed the boundaries of what’s possible in AI. She’s also deeply committed to education, sharing her knowledge as a language lecturer and mentoring others in the field.
+With a strong foundation in both academia and industry, Ivana brings a unique perspective to every project she undertakes. Whether she’s leading a team or developing new AI solutions, her work is driven by a genuine passion for innovation and a desire to make a difference.
+
+
+How background in linguistics is complementing Ivanas work in AI and prompt engineering:
+My background in linguistics provides a unique and valuable perspective in AI and prompt engineering. 
+Linguistics has given me a deep understanding of language structures, semantics, and syntax, which is crucial when working with NLP models. 
+This knowledge allows me to craft more effective and nuanced prompts, ensuring that AI systems interpret and generate language more accurately and naturally.
+Additionally, my experience in applied linguistics has equipped me with strong research skills, critical thinking, 
+and a methodical approach to problem-solving. These skills are directly applicable to AI and data science, where precision and analytical rigor are essential.
+By combining my linguistic expertise with technical skills in AI, I am able to bridge the gap between human language and machine understanding, 
+creating more efficient and effective AI-driven solutions.
+
+
+Ivanas Developer Education:
+Ivana learned how to code in Python on Algebra University in Zagreb.
+After that she continued to learn through courses on Codecademy, IBM, DeepLearning AI and other relevant pages. 
+
+Ivanas path from languages to programming:
+My journey into AI, NLP, and Applied Linguistics was fueled by a deep passion for language and curiosity for learning. 
+After completing my undergraduate studies, I wanted to delve deeper into the complexities of language, which led me to a PhD in Applied Linguistics. 
+During my doctoral studies, I was introduced to statistics and data analysis, as well as the processes of research.
+These skills naturally aligned with the foundational aspects of data science.
+As I engaged more with research and large datasets, I discovered that Python was a powerful tool for conducting research with greater efficiency and less manual effort. 
+This realization sparked my interest in programming, leading me to further my education as a Python developer. 
+My growing proficiency in Python opened the door to the world of Natural Language Processing (NLP) and Machine Learning (ML).
+After gaining experience in NLP through projects focused on sentiment analysis, text classification, and prediction, 
+I secured my first industry role. With the emergence of Large Language Models (LLMs), I quickly became fascinated by their potential, 
+particularly in the area of prompt engineering. This fascination guided me to my current role at Silverbrain AI AG, 
+where I have had the opportunity to apply my knowledge in prompting and the Retrieval-Augmented Generation (RAG) approach in real-world scenarios.
+
+
+Most significant contribution at Silverbrain AI AG, and how did it impact the project’s success:
+My most significant contribution at Silverbrain AI AG was the design and implementation of a new query approach within the Retrieval-Augmented Generation (RAG) pipeline, 
+specifically for the GenAI workflow automation tool, ChemAssist.ai. 
+This innovative approach involved crafting tailored prompts that facilitated more effective communication with Large Language Models (LLMs). 
+By developing and optimizing these prompt strategies, I was able to significantly enhance the capability and accuracy of the AI models used in the project.
+One of the key impacts of this contribution was the remarkable improvement in prompt response accuracy, which increased from 70% to 90%. 
+This boost in accuracy not only made the AI workflows more reliable but also increased the overall efficiency of the system, allowing for faster and more precise outputs. 
+The success of this initiative was further amplified by the collaborative efforts I led within the team, 
+where we focused on continuous data research and analysis to refine the AI model’s performance.
+This achievement played a crucial role in the project's success by delivering a more robust and efficient AI-driven solution, which met the client’s expectations. 
+It also demonstrated the value of innovative prompt engineering in enhancing AI capabilities, solidifying Silverbrain AI AG’s reputation for cutting-edge AI solutions.
+
+
+Work Experience:
+Ivana has a diverse and impactful career in the field of AI, NLP, and linguistics, spanning various roles and industries. 
+She currently works as a Team Lead Prompt Engineer & Data Science Intern at Silverbrain AI AG in Switzerland, 
+where she has made significant contributions by designing innovative query approaches and optimizing prompt design. 
+These efforts have led to a notable improvement in AI model accuracy (70 to 90%), demonstrating her ability to drive meaningful results within short period of engagement on the project.
+Before that role, Ivana worked as a Language Data Engineer & Data Analyst on a project focused on developing an Automatic Speech Recognition (ASR) system for the Croatian language for a Big Tech famous Voice Assistant and Dictation toll. 
+In this role, she was responsible for data analysis, model training, and the application of advanced NLP techniques, 
+showcasing her strong technical skills and expertise in language processing.
+In addition to her technical roles, Ivana has also been a Language Lecturer at the Faculty of Economics & Business in Zagreb, where she has been instrumental in developing language learning materials and planning curriculums. Her commitment to education is further evidenced by her long-standing position as a Board Member & Primary School Department Leader with the National Association of German Language Professionals, where she organizes conferences and delivers plenary lectures on language education.
+
+Technical Skills and some libraries that Ivana works with:
+Python, NLTK, SpaCy, Regular Expressions, OCR, Pattern Recognition, Gensim, Pandas, Numpy, Text Preprocessing, Git, Command Line, Prompt Engineering, LangChain, LlamaIndex, Azure, AWS, ChatGPT, HuggingFace, Streamlit, SQL/SQLAlchemy,  Command Line/Gitbash, SPSS
+
+My Prompt Engineering skills and techniques:
+One of the most challenging situation in prompt engineering was LLM hallucination. 
+Preventing hallucinations in AI models like GPT involves careful prompt engineering. There are some techniques that help reduce hallucinations
+and i'm the biggest fan of RAG approach aswell as combining RAG with other prompt techniques like Few-Shot-Prompting, Explicit Context Specifications, well managed and designed structure of prompt or steps for LLM to follow. 
+In this techniques linguistical but also technical knowledge of LLM's provided me with skills that helped me and my team to achieve this significant AI based model accuracy and improvement. 
+
+Projects:
+Since she started to learn coding Ivana made several interesting NLP, ML and AI projects which prove her ability to always be on track with knowledge and fast learning skill.
+Her projects are easily to found on her LinkedIn account (https://www.linkedin.com/in/ivanamaticphd/) but also on Github (https://github.com/ivanamati) and here are some of them:
+
+- **LLM App - AI Resume Assistant IvyBot:**
+IvyBot leverages a combination of text embedding and vector search technologies to retrieve 
+and present the most relevant information about Ivana in response to user' queries. 
+IvyBot is an AI-driven assistant leveraging GPT-4 and a Retrieval-Augmented Generation (RAG) approach 
+to provide precise and contextual insights into Ivanas programming expertise and learning journey. 
+It processes and embeds text from Ivana’s biography into a FAISS vector store, 
+enabling efficient retrieval of relevant information on demand. 
+IvyBot ensures that recruiters receive accurate, real-time answers about my projects, education, and skills, 
+all tailored to their specific queries. 
+This tool is designed to streamline the process of understanding Ivana’s technical background and professional growth.
+
+- **LLM App - Data Science Tutor:**
+Developed a Streamlit app utilizing OpenAI's LLM to answer data science queries. The app offers interactive Q&A and project examples, showcasing skills in prompt engineering, LangChain, and AI deployment.
+
+- **Language Data Engineering @ M47Labs:**
+Worked on an Automatic Speech Recognition (ASR) system for a Croatian Voice Assistant. Focused on data analysis, LSTM model training, and NLP techniques.
+
+- **Voice Assistant:**
+Created a voice assistant using Whisper and Google speech recognition engines. Integrated NLP for command processing and text-to-speech functionalities.
+
+- **Starbucks Review Classifier:**
+Designed a sentiment analysis model for Starbucks reviews using NLP and machine learning techniques like logistic regression and SVMs. Emphasized data preprocessing and model evaluation.
+
+- **ChatGPT Web Assistant:**
+Developed a web-based AI assistant using Flask and ChatGPT, allowing users to interact with a conversational AI directly from a web browser.
+
+
+Career Goal:
+Ivanas's career goal is to leverage their expertise in AI and emerging technologies to drive meaningful innovation and create solutions that positively impact businesses and society.
+
+
+Skills: 
+Ivana possesses a robust skill set that bridges the gap between linguistics and advanced AI technologies. Her expertise includes:
+
+- **Natural Language Processing (NLP):** Proficient in text preprocessing, language parsing, POS tagging, text classification, sentiment analysis, information extraction, and language modeling using techniques such as Bag of Words, TF-IDF, and word embeddings.
+- **AI and Machine Learning:** Skilled in developing and optimizing AI/ML models, with hands-on experience in deep learning, particularly with LSTM models, as well as prompt engineering and RAG to enhance model performance.
+- **Programming:** Strong command of Python and associated libraries like NLTK, SpaCy, Gensim, Pandas, and Numpy. Experienced in using regular expressions, OCR, and pattern recognition for complex language processing tasks.
+- **Data Analysis:** Expertise in data visualization, data analysis with Python, and working with tools such as SQL, SQLAlchemy, and SPSS. Ivana is also proficient in command-line tools like Git and Bash for efficient workflow management.
+- **Prompt Engineering:** Specialized in crafting and optimizing prompts for LLMs, leading to significant improvements in AI workflow accuracy and efficiency.
+- **Technical Tools:** Familiar with LangChain, HuggingFace, Streamlit, and various AI/ML development platforms, enhancing her ability to deploy and scale AI solutions effectively.
+Ivana’s skills reflect her comprehensive understanding of both the theoretical and practical aspects of AI and NLP, making her a versatile and capable professional in the tech industry.
+
+
+Certification:
+Ivana has completed several prestigious certifications that bolster her expertise in AI, machine learning, and data analysis, including:
+- **IBM: Prompt Engineering**  
+- **IBM: Conversational AI**  
+- **IBM: Data Analysis with Python**  
+- **IBM: Python for Data Science**  
+- **IBM: Data Visualization in Python**  
+- **OpenAI and DeepLearning.AI: Prompt Engineering for Developers**  
+- **Google Cloud: Generative AI Fundamentals**  
+- **Google Developers: Machine Learning Crash Course**  
+- **Codecademy: Learn Machine Learning (Skill Path)**  
+- **Codecademy: Apply Natural Language Processing with Python (Skill Path)**  
+- **Codecademy: Text Preporcessing;Language Parsing & POS Tagging; Language Models: Bag of Words, Term Frequency-Inverse Document Frequency, Word embeddings; Text Generation with Deep Learning: LSTM model; Text Classification, Sentiment Analysis, Information Extraction; Apply Natural Language Processing with Python (Skill Path)**
+These certifications reflect Ivana's commitment to continuous learning and staying at the forefront of advancements in AI, NLP, and data science.
+
+
+Achievements in the tech industries:
+Ivana has made significant contributions to the field of AI and linguistics, marked by several notable achievements:
+- **Improved AI Model Accuracy:** Successfully designed a new query approach in the RAG pipeline and optimized prompt design, resulting in a substantial increase in AI model accuracy from 70% to 90%.
+- **Recognized Research Excellence:** Twice awarded for being a Young Perspective Researcher during her PhD in Linguistics and Applied Linguistics, acknowledging her innovative research contributions.
+- **Educational Impact:** Received an award for Excellent Achievements in Education at the local level, highlighting her dedication to advancing language education through her roles as a lecturer and department leader.
+- **Leadership in AI Development:** Played a pivotal role in developing and leading a team in the creation of advanced AI solutions, particularly in the field of natural language processing and prompt engineering.
+These achievements underscore Ivana's expertise, innovation, and leadership in both the academic and professional realms.
+
+
+Contact:
+LinkedIn: https://www.linkedin.com/in/ivanamaticphd/
+Github: https://github.com/ivanamati
+E-mail: ivanamati@gmail.com
+Location: Zagreb, Croatia
+
+
+Portfolio:
+As a young AI developer Ivana's portfolio is mainly Github with projects in ML/NLP developlment as well few in applying AI in applications. 
+Her scientific portfolio is available on https://www.croris.hr/osobe/profil/41695
+
+
+Availability:
+As Intern Ivana is actively seeking new job opportunities and is possibly ready to start next month.
+
+
+References and Recommendation letters:
+References and recommendation letters are available upon request.
+
+
+Strengths and Advantages:
+Ivana's strengths lie in a profound passion for technology, languages, self-development, innovative problem-solving, and client-centric solutions.
+
+
+Weaknesses and Disadvantages:
+Ivana's unwavering pursuit of excellence may occasionally lead to in-depth analysis, but it ensures the delivery of high-quality services.
+
+
+Interests and Hobbies:
+Ivana's passion for technology extends beyond her professional life, where she continues to explore the cutting-edge world of GenAI, always eager to push the boundaries in various innovative projects. Outside of work, Ivana is a national champion in Latin American and ballroom dances, showcasing her dedication and discipline in the arts. She also enjoys losing herself in a good book, walking in nature, watching documentary movies, and immersing herself in music and concerts. Ivana values the simple pleasures of life, such as spending quality time with friends and family, whether it's over a shared coffee, matcha or during a peaceful walk.
