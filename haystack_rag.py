@@ -13,8 +13,8 @@ import streamlit as st
 
 warnings.filterwarnings('ignore')
 
-from dotenv import load_dotenv
-load_dotenv()  
+# from dotenv import load_dotenv
+# load_dotenv()  
 
 
 def document_store(document):
