@@ -17,10 +17,10 @@ warnings.filterwarnings('ignore')
 # load_dotenv()  
 
 
-def document_store(document):
+def document_store(document,openai_api_key):
     document_store = InMemoryDocumentStore()
     splitter = DocumentSplitter(split_by="word", split_length=200)       #splits documents into chunks
-    embedder = OpenAIDocumentEmbedder(model="text-embedding-3-small") #creates vector embeddings
+    embedder = OpenAIDocumentEmbedder(model="text-embedding-3-small",api_key=openai_api_key) #creates vector embeddings
     writer = DocumentWriter(document_store=document_store)  #writes embeddings into vector data store
 
     #creating Pipeline
@@ -46,8 +46,8 @@ def document_store(document):
     #print(document_store.filter_documents()[1].content)
     return document_store
 
-def rag_pipeline(document,query):
-    query_embedder = OpenAITextEmbedder(model="text-embedding-3-small")
+def rag_pipeline(document,query, openai_api_key):
+    query_embedder = OpenAITextEmbedder(model="text-embedding-3-small", api_key=openai_api_key)
     retriever = InMemoryEmbeddingRetriever(document_store=document_store(document))
     prompt_builder = PromptBuilder(template=prompt)
     generator = OpenAIGenerator(model="gpt-4o")

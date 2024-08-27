@@ -51,5 +51,5 @@ except Exception as e:
     st.sidebar.error("Please enter a candidate CV")
 
 if submitted and openai_api_key.startswith('sk-'):
-    result = rag_pipeline(document,query)
+    result = rag_pipeline(document,query, openai_api_key)
     st.info(result['generator']['replies'][0])
