@@ -48,6 +48,7 @@ if uploaded_file:
     for page_num in range(len(pdf_reader.pages)):
         page = pdf_reader.pages[page_num]
         text += page.extract_text()
+    #print(text)
 
 document = [Document(content=text)]   
 
@@ -56,21 +57,21 @@ document = [Document(content=text)]
 document_store = InMemoryDocumentStore()
 #converter = PyPDFToDocument()
 #converter = TextFileToDocument()                                      #converts files to documents
-splitter = DocumentSplitter(split_by="sentence", split_length=5)       #splits documents into chunks
-embedder = OpenAIDocumentEmbedder() #creates vector embeddings
+splitter = DocumentSplitter(split_by="word", split_length=200)       #splits documents into chunks
+embedder = OpenAIDocumentEmbedder(model="text-embedding-3-small") #creates vector embeddings
 writer = DocumentWriter(document_store=document_store)  #writes embeddings into vector data store
 
 
 #creating Pipeline
 indexing_pipeline = Pipeline()
 
-#adding components to the pipeline
+######adding components to the pipeline
 #indexing_pipeline.add_component("converter", converter)
 indexing_pipeline.add_component("splitter", splitter)
 indexing_pipeline.add_component("embedder", embedder)
 indexing_pipeline.add_component("writer", writer)
 
-#connecting componets
+######connecting componets
 #indexing_pipeline.connect("converter", "splitter")
 indexing_pipeline.connect("splitter", "embedder")
 indexing_pipeline.connect("embedder", "writer")
@@ -79,24 +80,32 @@ indexing_pipeline.connect("embedder", "writer")
 indexing_pipeline.run({"documents": document})
 #if converter used in pipeline
 #indexing_pipeline.run({"converter": {"sources":document}})
+print("Number of documents:",document_store.count_documents()) #in prompt we need to iterate over the documents that retriever will select!
 #checking the document store at index 1
-#print(document_store.filter_documents()[1].content)
+print(document_store.filter_documents()[1].content)
 
 
 ## Retrieval Augmented Generation with Prompt
 prompt = """
-    A company that uses you is searching for a good job candidate. 
-    Your task is to help the HR department with answering the questions based on the provided Context.
-    This context is from a resume of a job candidate. 
-    Don't put yourself in front, answer just based on the Context.
+    Your task is to help the recruiter to get to know the job candidate better. 
+    You will be provided with Context which is a candidates Resume. 
+    Answer the recruiter questions based on the provided Context. 
+    Don't put yourself in front, answer based on the Context.
+    When enough informations provided give longer and informative answers. 
+
     Context:
-    {{ documents }} 
+    {% for doc in documents %}
+        {{ doc.content }} 
+
+    {% endfor %}
+
     Question: {{ query }} 
+
+
     Answer: 
     """
 
-#query_embedder = CohereTextEmbedder(model="embed-english-v3.0", api_base_url=os.getenv("CO_API_URL"))
-query_embedder = OpenAITextEmbedder()
+query_embedder = OpenAITextEmbedder(model="text-embedding-3-small")
 retriever = InMemoryEmbeddingRetriever(document_store=document_store)
 prompt_builder = PromptBuilder(template=prompt)
 generator = OpenAIGenerator(model="gpt-4o")
@@ -110,7 +119,6 @@ rag.add_component("generator", generator)
 rag.connect("query_embedder.embedding", "retriever.query_embedding")
 rag.connect("retriever.documents", "prompt.documents")
 rag.connect("prompt", "generator")
-
 
 
 result = rag.run(
