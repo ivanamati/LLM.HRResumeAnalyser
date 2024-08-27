@@ -1,3 +1,4 @@
 haystack-ai
 pypdf
 streamlit
+PyPDF2
