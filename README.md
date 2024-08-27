@@ -1,6 +1,6 @@
 # AI Resume Analyst
 
-AI Resume Analyst is a powerful tool designed to streamline the recruitment process using cutting-edge AI and Natural Language Processing (NLP) technologies. With AI Resume Analyst, recruiters can easily upload candidate resumes, ask specific questions, and receive detailed, context-aware answers, helping them find the perfect candidate for their job.
+AI Resume Analyst is a tool designed to streamline the recruitment process using cutting-edge AI and Natural Language Processing (NLP) technologies. With AI Resume Analyst, recruiters can easily upload candidate resumes, ask specific questions, and receive detailed, context-aware answers, helping them find the perfect candidate for their job.
 
 ## Features
 
@@ -8,6 +8,8 @@ AI Resume Analyst is a powerful tool designed to streamline the recruitment proc
 - **Context-Aware Q&A**: Formulate clear and specific questions about candidates, and the AI will generate detailed answers based on the provided resumes.
 - **OpenAI GPT Integration**: Leveraging the power of GPT-4 to generate human-like responses to your queries.
 - **Haystack Integration**: Utilizes Haystack for document processing, embedding, and retrieval to ensure precise and relevant answers.
+
+![alt text](image.png)
 
 ## Installation
 
@@ -31,5 +33,4 @@ AI Resume Analyst is a powerful tool designed to streamline the recruitment proc
 2. Upload candidate resumes in PDF format using the sidebar uploader.
 3. Formulate your question about the candidates in the provided text area.
 4. Submit the form to receive AI-generated answers based on the resumes.
-
 

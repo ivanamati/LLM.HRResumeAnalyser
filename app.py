@@ -31,9 +31,9 @@ with st.form('my_form'):
   #if submitted and openai_api_key.startswith('sk-'): 
   #if submitted:
 
-with st.form(key='job description_form'):
-    job_description = st.text_area('Enter the job description')
-    submitted = st.form_submit_button(label='Just Enter',disabled=True)
+# with st.form(key='job description_form'):
+#     job_description = st.text_area('Enter the job description')
+#     submitted = st.form_submit_button(label='Just Enter',disabled=True)
 
 uploaded_file = st.sidebar.file_uploader(label="CV",label_visibility="hidden")
 if uploaded_file:
