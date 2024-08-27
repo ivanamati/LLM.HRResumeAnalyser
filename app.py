@@ -25,8 +25,8 @@ st.sidebar.title("Candidates resume")
 with st.form('my_form'):
     query = st.text_area('Enter the question about candidates')
     submitted = st.form_submit_button('Answer')
-#   if not openai_api_key.startswith('sk-'):
-#     st.warning('Please enter your OpenAI API key!', icon='⚠')
+    if not openai_api_key.startswith('sk-'):
+        st.warning('Please enter your OpenAI API key!', icon='⚠')
   
   #if submitted and openai_api_key.startswith('sk-'): 
   #if submitted:
@@ -50,6 +50,6 @@ try:
 except Exception as e:
     st.sidebar.error("Please enter a candidate CV")
 
-if submitted:
+if submitted and openai_api_key.startswith('sk-'):
     result = rag_pipeline(document,query)
     st.info(result['generator']['replies'][0])

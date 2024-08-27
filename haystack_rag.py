@@ -12,6 +12,7 @@ from haystack.components.retrievers.in_memory import InMemoryEmbeddingRetriever
 import streamlit as st
 
 warnings.filterwarnings('ignore')
+
 from dotenv import load_dotenv
 load_dotenv()  
 
