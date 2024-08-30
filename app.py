@@ -15,9 +15,6 @@ Upload candidate resumes, formulate your questions clear and specific and let AI
 '''
 st.markdown(info)
 
-
-st.sidebar.title("Your OpenAI API key here")
-openai_api_key = st.sidebar.text_input('OpenAI API key')
 st.sidebar.divider()
 st.sidebar.title("Candidates resume")
 
@@ -25,16 +22,7 @@ st.sidebar.title("Candidates resume")
 with st.form('my_form'):
     query = st.text_area('Enter the question about candidates')
     submitted = st.form_submit_button('Answer')
-    if not openai_api_key.startswith('sk-'):
-        st.warning('Please enter your OpenAI API key!', icon='⚠')
   
-  #if submitted and openai_api_key.startswith('sk-'): 
-  #if submitted:
-
-# with st.form(key='job description_form'):
-#     job_description = st.text_area('Enter the job description')
-#     submitted = st.form_submit_button(label='Just Enter',disabled=True)
-
 uploaded_file = st.sidebar.file_uploader(label="CV",label_visibility="hidden")
 if uploaded_file:
     # Exstracting the text from PDF
@@ -50,6 +38,6 @@ try:
 except Exception as e:
     st.sidebar.error("Please enter a candidate CV")
 
-if submitted and openai_api_key.startswith('sk-'):
-    result = rag_pipeline(document,query, openai_api_key)
+if submitted:
+    result = rag_pipeline(document,query)
     st.info(result['generator']['replies'][0])
